@@ -1,7 +1,14 @@
 {{template "layout" .}}
 {{define "main"}}
 <div class="text">
-        <h1 style="color: brown;">product {{.content}}</h1>
+        <h1 style="color: brown;"> {{.ID}}</h1>
+</div>
+<div class="text">
+    <h1 style="color: brown;"> {{.Name}}</h1>
+</div><div class="text">
+    <h1 style="color: brown;"> {{.Price}}</h1>
+</div><div class="text">
+    <h1 style="color: brown;"> {{.Stock}}</h1>
 </div>
 {{end}}
     

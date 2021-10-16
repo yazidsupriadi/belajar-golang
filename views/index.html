@@ -1,6 +1,13 @@
 {{template "layout" .}}
 {{define "main"}}
+
+{{ range .}}
+
 <div class="text">
-        <h1 style="color: brown;">{{.content}}</h1>
+<h1 style="color: brown;"> {{ .ID }}{{ .Name }} - {{ .Price }}  {{.StockStatus}}</h1>
 </div>
+    {{if lt .Stock 3}}
+        <p>Stock hampir habis</p>
+    {{end}}
+{{end}}
 {{ end }}
